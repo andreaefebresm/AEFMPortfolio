@@ -1,6 +1,4 @@
-:root {
-
-}
+:root {}
 
 html {
   background: #222222;
@@ -38,6 +36,7 @@ body #home {
   background: #222222;
   opacity: 80%;
 }
+
 .uk-section {
   padding-bottom: 0;
   display: flex;
@@ -47,7 +46,6 @@ body #home {
 .uk-section-primary {
   background: #222222;
 }
-
 
 #bio {
   font-size: 4rem;
@@ -69,17 +67,53 @@ body #home {
 }
 
 h1 {
-  font-family: Favorit Extended Light, serif;
-  /* font-style: italic; */
-  font-size: 3rem;
-}
-
-.bla {
   font-family: Self Modern Trial, serif;
   font-style: italic;
   font-size: 3rem;
+  color: #666666;
 }
 
+@keyframes color-change {
+  0% {
+    color: #222222;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes font-change {
+  0% {
+    font-family: Self Modern Trial, serif;
+    color: #222222;
+  }
+
+  50% {
+    font-family: Self Modern Trial, serif;
+    font-style: italic;
+    color: white;
+  }
+
+  100% {
+    font-family: Favorit Extended Light, sans-serif;
+    color: yellow;
+  }
+}
+
+.bla:hover {
+  animation: color-change 0.4s infinite;
+  animation: font-change 0.4s infinite;
+  filter: blur(0px);
+}
+
+.bla {
+  filter: blur(10px);
+}
 /*cursor */
 * {
   box-sizing: border-box;
