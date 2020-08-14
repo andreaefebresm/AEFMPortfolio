@@ -1,0 +1,148 @@
+:root {
+
+}
+
+html {
+  background: #222222;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+a {
+  font-family: Favorit Extended Light, serif !important;
+}
+
+body #home {
+  cursor: none;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.uk-navbar-container {
+  border-bottom: 1px solid #eee;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+}
+
+.uk-section {
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.uk-section-primary {
+  background: #222222;
+}
+
+
+#bio {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-left: 40px;
+}
+
+.uk-grid {
+  padding-left: 2rem;
+}
+
+.item {
+  padding-left: 4rem;
+  width: 40%;
+}
+
+#first {
+  margin-left: 8rem;
+}
+
+h1 {
+  font-family: Favorit Extended Light, serif;
+  /* font-style: italic; */
+  font-size: 3rem;
+}
+
+.bla {
+  font-family: Self Modern Trial, serif;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+/*cursor */
+* {
+  box-sizing: border-box;
+}
+
+.theBall, .theBall-outer {
+  mix-blend-mode: exclusion;
+  width: 20px;
+  height: 20px;
+}
+
+.theBall-outer {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  z-index: 5000;
+  pointer-events: none !important;
+}
+
+.theBall {
+  position: absolute;
+  background-color: blue;
+  border-radius: 50%;
+  -webkit-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+  -moz-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+  -ms-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+  -o-transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+  transition: transform .2s cubic-bezier(.175, .885, .32, 1.275);
+  transform-origin: center center;
+}
+
+.dark_page .theBall,
+.coloring .theBall {
+  background-color: #ffd400;
+}
+
+.zooming.theBall {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(5);
+}
+
+/* scroll bar horizontal */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0.5vh;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #222222;
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: blue;
+}
+
+/* works */
+.item {
+  display: flex;
+}
+
+#box {
+  overflow-y: 0;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 88vh;
+}
