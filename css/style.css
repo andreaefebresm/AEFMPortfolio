@@ -23,12 +23,21 @@ body #home {
 }
 
 .uk-navbar-container {
-  border-bottom: 1px solid #eee;
   height: 12vh;
   display: flex;
   align-items: center;
+  filter: blur(0.7px);
+  background: #222222;
 }
 
+.uk-navbar-container:hover {
+  filter: none;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #222222;
+  opacity: 80%;
+}
 .uk-section {
   padding-bottom: 0;
   display: flex;
@@ -145,4 +154,14 @@ h1 {
   display: flex;
   align-items: center;
   height: 88vh;
+  background: #222222;
+}
+
+.proj {
+  filter: grayscale(100%);
+  border: 1px solid white;
+}
+
+.proj:hover {
+  filter: grayscale(0%);
 }
